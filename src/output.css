@@ -12,6 +12,8 @@
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
@@ -181,26 +183,8 @@
   .relative {
     position: relative;
   }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
-  }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
-  }
-  .right-40 {
-    right: calc(var(--spacing) * 40);
-  }
-  .right-50 {
-    right: calc(var(--spacing) * 50);
-  }
-  .right-55 {
-    right: calc(var(--spacing) * 55);
-  }
-  .right-60 {
-    right: calc(var(--spacing) * 60);
+  .top-20 {
+    top: calc(var(--spacing) * 20);
   }
   .right-\[5\%\] {
     right: 5%;
@@ -208,41 +192,26 @@
   .right-\[10\%\] {
     right: 10%;
   }
-  .right-\[10\] {
-    right: 10;
-  }
   .right-\[15\%\] {
     right: 15%;
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-1 {
-    bottom: calc(var(--spacing) * 1);
-  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
-  }
-  .bottom-30 {
-    bottom: calc(var(--spacing) * 30);
   }
   .bottom-40 {
     bottom: calc(var(--spacing) * 40);
   }
-  .bottom-50 {
-    bottom: calc(var(--spacing) * 50);
-  }
-  .bottom-60 {
-    bottom: calc(var(--spacing) * 60);
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .z-1 {
     z-index: 1;
   }
   .m-auto {
     margin: auto;
-  }
-  .my-1 {
-    margin-block: calc(var(--spacing) * 1);
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
@@ -256,62 +225,20 @@
   .table {
     display: table;
   }
-  .w-\[\%\] {
-    width: %;
-  }
-  .w-\[2\] {
-    width: 2;
-  }
-  .w-\[10\%\] {
-    width: 10%;
-  }
-  .w-\[15\%\] {
-    width: 15%;
-  }
-  .w-\[20\%\] {
-    width: 20%;
-  }
   .w-\[25\%\] {
     width: 25%;
-  }
-  .w-\[30\%\] {
-    width: 30%;
-  }
-  .w-\[40\%\] {
-    width: 40%;
   }
   .w-\[50\%\] {
     width: 50%;
   }
-  .w-\[50\] {
-    width: 50;
-  }
-  .w-\[60\%\] {
-    width: 60%;
-  }
-  .w-\[65\%\] {
-    width: 65%;
-  }
   .w-\[70\%\] {
     width: 70%;
-  }
-  .w-\[70\] {
-    width: 70;
-  }
-  .w-\[80\%\] {
-    width: 80%;
   }
   .w-\[90\%\] {
     width: 90%;
   }
-  .w-\[90\] {
-    width: 90;
-  }
   .w-full {
     width: 100%;
-  }
-  .max-w-3 {
-    max-width: calc(var(--spacing) * 3);
   }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
@@ -328,6 +255,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -336,12 +266,6 @@
   }
   .justify-between {
     justify-content: space-between;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -355,29 +279,20 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
-  }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
-  .gap-x-3 {
-    column-gap: calc(var(--spacing) * 3);
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
+  .gap-25 {
+    gap: calc(var(--spacing) * 25);
   }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
   }
   .gap-x-7 {
     column-gap: calc(var(--spacing) * 7);
-  }
-  .gap-y-5 {
-    row-gap: calc(var(--spacing) * 5);
-  }
-  .gap-y-7 {
-    row-gap: calc(var(--spacing) * 7);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -401,20 +316,8 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .p-\[10\] {
-    padding: 10;
-  }
-  .p-\[15px\] {
-    padding: 15px;
-  }
   .p-\[15px_30px\] {
     padding: 15px 30px;
-  }
-  .p-\[15px_\] {
-    padding: 15px ;
-  }
-  .px-0 {
-    padding-inline: calc(var(--spacing) * 0);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -425,14 +328,14 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-40 {
-    padding-top: calc(var(--spacing) * 40);
+  .pb-7 {
+    padding-bottom: calc(var(--spacing) * 7);
   }
   .text-start {
     text-align: start;
@@ -444,6 +347,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -452,14 +359,8 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
-  .text-\[5px\] {
-    font-size: 5px;
-  }
   .text-\[10px\] {
     font-size: 10px;
-  }
-  .text-\[12px\] {
-    font-size: 12px;
   }
   .text-\[15px\] {
     font-size: 15px;
@@ -467,22 +368,9 @@
   .text-\[20px\] {
     font-size: 20px;
   }
-  .text-\[30px\] {
-    font-size: 30px;
-  }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .text-\[3\] {
-    color: 3;
-  }
-  .text-\[25\] {
-    color: 25;
   }
   .text-white {
     color: var(--color-white);
@@ -490,12 +378,13 @@
   .underline {
     text-decoration-line: underline;
   }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .text-shadow-2xs {
-    text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.15));
   }
   .lg\:right-50 {
     @media (width >= 64rem) {
@@ -537,39 +426,14 @@
       display: none !important;
     }
   }
-  .lg\:w-\[4-\%\] {
-    @media (width >= 64rem) {
-      width: 4-%;
-    }
-  }
-  .lg\:w-\[10\%\] {
-    @media (width >= 64rem) {
-      width: 10%;
-    }
-  }
   .lg\:w-\[15\%\] {
     @media (width >= 64rem) {
       width: 15%;
     }
   }
-  .lg\:w-\[20\%\] {
+  .lg\:w-\[18\%\] {
     @media (width >= 64rem) {
-      width: 20%;
-    }
-  }
-  .lg\:w-\[22\%\] {
-    @media (width >= 64rem) {
-      width: 22%;
-    }
-  }
-  .lg\:w-\[23\%\] {
-    @media (width >= 64rem) {
-      width: 23%;
-    }
-  }
-  .lg\:w-\[24\%\] {
-    @media (width >= 64rem) {
-      width: 24%;
+      width: 18%;
     }
   }
   .lg\:w-\[25\%\] {
@@ -577,29 +441,9 @@
       width: 25%;
     }
   }
-  .lg\:w-\[30\%\] {
-    @media (width >= 64rem) {
-      width: 30%;
-    }
-  }
   .lg\:w-\[35\%\] {
     @media (width >= 64rem) {
       width: 35%;
-    }
-  }
-  .lg\:w-\[40\%\] {
-    @media (width >= 64rem) {
-      width: 40%;
-    }
-  }
-  .lg\:w-\[50\%\] {
-    @media (width >= 64rem) {
-      width: 50%;
-    }
-  }
-  .lg\:w-\[60\%\] {
-    @media (width >= 64rem) {
-      width: 60%;
     }
   }
   .lg\:w-\[70\%\] {
@@ -627,29 +471,19 @@
       gap: calc(var(--spacing) * 3);
     }
   }
+  .lg\:gap-25 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 25);
+    }
+  }
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
     }
   }
-  .lg\:py-20 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:py-25 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 25);
-    }
-  }
   .lg\:pt-40 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 40);
-    }
-  }
-  .lg\:pb-2 {
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 2);
     }
   }
   .lg\:pb-25 {
@@ -662,21 +496,10 @@
       text-align: center;
     }
   }
-  .lg\:text-5xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-  }
   .lg\:text-6xl {
     @media (width >= 64rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-  }
-  .lg\:text-\[64px\] {
-    @media (width >= 64rem) {
-      font-size: 64px;
     }
   }
 }
@@ -689,28 +512,96 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-text-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-text-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
-      --tw-text-shadow-color: initial;
-      --tw-text-shadow-alpha: 100%;
     }
   }
 }
