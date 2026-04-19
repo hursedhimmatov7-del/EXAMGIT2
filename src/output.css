@@ -192,6 +192,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-15 {
+    right: calc(var(--spacing) * 15);
+  }
   .right-\[5\%\] {
     right: 5%;
   }
@@ -207,14 +210,26 @@
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
+  .bottom-15 {
+    bottom: calc(var(--spacing) * 15);
+  }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
+  }
   .bottom-40 {
     bottom: calc(var(--spacing) * 40);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-15 {
+    left: calc(var(--spacing) * 15);
+  }
   .z-1 {
     z-index: 1;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .-order-1 {
     order: calc(1 * -1);
@@ -237,6 +252,27 @@
   .table {
     display: table;
   }
+  .h-\[40vh\] {
+    height: 40vh;
+  }
+  .h-\[45vh\] {
+    height: 45vh;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-\[75vh\] {
+    height: 75vh;
+  }
+  .h-\[80vh\] {
+    height: 80vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
   .w-\[4\] {
     width: 4;
   }
@@ -251,6 +287,9 @@
   }
   .w-\[25\%\] {
     width: 25%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -432,8 +471,14 @@
   .p-\[8px_16px\] {
     padding: 8px 16px;
   }
+  .p-\[10p\] {
+    padding: 10p;
+  }
   .p-\[10px_10px\] {
     padding: 10px 10px;
+  }
+  .p-\[10px_25px\] {
+    padding: 10px 25px;
   }
   .p-\[10px_30px\] {
     padding: 10px 30px;
@@ -449,6 +494,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -495,6 +543,12 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-\[5px\] {
+    font-size: 5px;
+  }
+  .text-\[7px\] {
+    font-size: 7px;
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -581,6 +635,16 @@
   .lg\:hidden\! {
     @media (width >= 64rem) {
       display: none !important;
+    }
+  }
+  .lg\:h-\[75vh\] {
+    @media (width >= 64rem) {
+      height: 75vh;
+    }
+  }
+  .lg\:w-\[8\] {
+    @media (width >= 64rem) {
+      width: 8;
     }
   }
   .lg\:w-\[15\%\] {
@@ -706,6 +770,11 @@
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:py-20 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .lg\:py-40 {
